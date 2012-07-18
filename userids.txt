@@ -1,9 +1,6 @@
 jpopyack
 afunicello
 maaron
-<<<<<<< HEAD
 rlin
 bherrera
-=======
 dekiss
->>>>>>> userid names
