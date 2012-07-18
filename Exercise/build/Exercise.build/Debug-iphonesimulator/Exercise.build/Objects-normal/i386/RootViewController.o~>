@@ -1,9 +1,0 @@
-/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m:15: error: no declaration of property 'exerciseView' found in the interface
-/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m: In function '-[RootViewController viewDidLoad]':
-/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m:67: error: 'numberOfSectionsInTableView' undeclared (first use in this function)
-/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m:67: error: (Each undeclared identifier is reported only once
-/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m:67: error: for each function it appears in.)
-/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m:67: error: expected ';' before ':' token
-/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m:170: error: expected declaration or statement at end of input
-/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m: At top level:
-/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m:170: warning: '@end' missing in implementation context

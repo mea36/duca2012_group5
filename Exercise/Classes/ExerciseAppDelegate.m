@@ -15,7 +15,7 @@
 
 @synthesize window;
 @synthesize navigationController;
-@synthesize fruits;
+@synthesize exercises;
 
 
 #pragma mark -
@@ -36,8 +36,14 @@
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
 	
 	Exercise *core	=[[Exercise alloc] initWithName:@"Core" description:@"List...etc"];
-	Exercise *upper body	=[[Exercise alloc] initWithName:@"Upper Body" description:@"List...etc"];
-	Exercise *Legs	=[[Exercise alloc] initWithName:@"Legs" description:@"List...etc"];
+	Exercise *upperbody	=[[Exercise alloc] initWithName:@"Upperbody" description:@"List...etc"];
+	Exercise *legs	=[[Exercise alloc] initWithName:@"Legs" description:@"List...etc"];
+	
+	self.exercises = [[NSMutableArray alloc] initWithObjects:core,upperbody,legs,nil];
+					  
+	[window addSubview:[navigationController view]];
+	[window makeKeyAndVisible];
+}
 
 
 - (void)applicationWillResignActive:(UIApplication *)application {
