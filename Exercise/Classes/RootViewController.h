@@ -7,8 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ExerciseViewControllerX.h"
 
 @interface RootViewController : UITableViewController {
+	ExerciseViewControllerX *exerciseView;
 }
+
+@property(nonatomic,retain) ExerciseViewControllerX *exerciseView;
 
 @end

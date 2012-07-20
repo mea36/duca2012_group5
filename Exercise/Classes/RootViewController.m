@@ -15,7 +15,8 @@
 @synthesize exerciseView;
 
 - (void)viewDidLoad {
-	self.title = @"Exercise";
+	self.title = @"Exercises";
+}
 
 
 #pragma mark -
@@ -67,7 +68,7 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
     return 1;
 }
- 
+
 
 // Customize the number of rows in the table view.
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -80,12 +81,19 @@
 // Customize the appearance of table view cells.
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"MyIdentifier";
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewStyleGrouped reuseIdentifier:CellIdentifier] autorelease];
     }
+	
+	ExerciseAppDelegate *appDelegate = (ExerciseAppDelegate *)[[UIApplication sharedApplication] delegate];
+	Exercise *e = (Exercise *)[appDelegate.exercises objectAtIndex:indexPath.row];
+	
+	[cell setText:e.name];
+	
+	
     
 	// Configure the cell.
 
@@ -137,6 +145,22 @@
 #pragma mark Table view delegate
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+	
+	ExerciseAppDelegate *appDelegate = (ExerciseAppDelegate *)[[UIApplication sharedApplication] delegate];
+	Exercise *exercise = (Exercise *)[appDelegate.exercises objectAtIndex:indexPath.row];
+	
+	if(self.exerciseView == nil) {
+		ExerciseViewControllerX *viewController = [[ExerciseViewControllerX alloc] initWithNibName:@"ExerciseViewControllerX" bundle:[NSBundle mainBundle]];
+		self.exerciseView = viewController;
+		[viewController release];
+		[self.exerciseView.exerciseDescription setText:[exercise description]];
+	}
+	
+	[self.navigationController pushViewController:self.exerciseView animated:YES];
+	self.exerciseView.title = [exercise name];
+	[self.exerciseView.exerciseDescription setText:[exercise description]];
+	
+}
     
 	/*
 	 <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
@@ -145,7 +169,7 @@
 	 [self.navigationController pushViewController:detailViewController animated:YES];
 	 [detailViewController release];
 	 */
-}
+
 
 
 #pragma mark -

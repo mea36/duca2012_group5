@@ -20,7 +20,7 @@
 
 #pragma mark -
 #pragma mark Application lifecycle
-
+/*
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
     // Override point for customization after application launch.
@@ -31,15 +31,16 @@
 
     return YES;
 }
-
+*/
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
+
+	Exercise *core	=[[Exercise alloc] initWithName:@"Core" description:@"Crunch:\nStep:1 Lie with you back on the floor and your feet flat, knees bent.\nStep:2 Lift your upper body as high as possible withough your legs coming off the ground then slowly lower back to starting position.\nREPS:Do 3 sets of 10 repitetions can increase repetetions if 10 isnt enough also can increase sets."];
+	Exercise *upperbody	=[[Exercise alloc] initWithName:@"Upper Body" description:@"Standing Dumbbell Curl:Step:1 Take two dumbbells of equal wieght that you will be able to lift and do 3 sets of 10 repitetions.\nStep:2 Hold the two dumbbells at your sides with your palms facing away from you.\nStep:3 Curl the dumbbells up towards your shoulders.Step:4 Lower the dumbbells slowly and back to the starting position you can increase your wieght after two weeks."];
+	Exercise *legs	=[[Exercise alloc] initWithName:@"Legs" description:@"Lunge:\nStep:1 Stand up stright with your arms on your hips.\nStep:2 Step forward with one leg and lower your body untill you knee is 90 degrees from the floor,\nReturn to the standing position as quickly as possible and repeat the same step but use your other leg and do 3 set of 10 repitetions you can add on more repetetions if 10 is not enough or add on more sets. "];
+	Exercise *arms =[[Exercise alloc] initWithName:@"Arms" description:@"blahblahblah"];
 	
-	Exercise *core	=[[Exercise alloc] initWithName:@"Core" description:@"List...etc"];
-	Exercise *upperbody	=[[Exercise alloc] initWithName:@"Upperbody" description:@"List...etc"];
-	Exercise *legs	=[[Exercise alloc] initWithName:@"Legs" description:@"List...etc"];
-	
-	self.exercises = [[NSMutableArray alloc] initWithObjects:core,upperbody,legs,nil];
+	self.exercises = [[NSMutableArray alloc] initWithObjects:core,upperbody,legs,arms,nil];
 					  
 	[window addSubview:[navigationController view]];
 	[window makeKeyAndVisible];
