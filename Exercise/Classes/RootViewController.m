@@ -9,6 +9,7 @@
 #import "RootViewController.h"
 #import "ExerciseAppDelegate.h"
 #import "Exercise.h"
+#import "ViewController.h"
 
 
 @implementation RootViewController

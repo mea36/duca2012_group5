@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "ExerciseAppDelegate.h"
+#import "RootViewController.h"
+#import "Exercise.h"
 
 @interface ViewController ()
 
@@ -26,13 +29,31 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-
+    
+    NSDictionary *menudict = [dictionaryWith:[NSArray arrayWithObjects:@"ist",@"2nd",nil] forKeys:[NSArray arrayWithObjects:@"FirstKey", @"SecondKey", nil]];
+    
+    //Initialize the Array
+    menuitems = [[NSArray alloc] init];
+    
+    //Add items
+    [menuitems addObject:@"Exercises"];
+    [menuitems addObject:@"Workout Queue"];
+    
+    //Set the title
+    self.title = @"Workout Central";
+}
+    //dealloc method declared in RootViewController.m
+    - (void)dealloc { 
+        
+        [menuitems release];
+        [super dealloc];
+    }
+    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-}
 
 - (void)viewDidUnload
 {
@@ -52,22 +73,30 @@
 {
 #warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [menuitems count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    // Configure the cell...
+    static NSString *CellIdentifier = @"Cell";
+    
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if (cell == nil) {
+        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
+    }
+	
+	NSString *cellValue = [menuitems objectAtIndex:indexPath.row];
+    cell.text = cellValue;
+	
+	// Configure the cell.
     
     return cell;
 }
@@ -116,13 +145,13 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Navigation logic may go here. Create and push another view controller.
-    /*
-     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+    
+     ViewController *MainviewController = [[ViewController alloc] initWithNibName:@"NEW Workout Central" bundle:nil];
      // ...
      // Pass the selected object to the new view controller.
-     [self.navigationController pushViewController:detailViewController animated:YES];
-     [detailViewController release];
-     */
+     [self.navigationController pushViewController:MainviewController animated:YES];
+     [MainviewController release];
+     
 }
 
 @end
