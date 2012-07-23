@@ -1,7 +1,7 @@
 TExercise
 v7
 r0
-t364505707.353132
+t364586894.811351
 cCheck dependencies
 cProcessInfoPlistFile /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Info.plist Exercise-Info.plist
 cCompileXIB /Users/Ryan/Documents/Xcode/Exercise/MainWindow.xib
@@ -15,6 +15,9 @@ cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-norm
 cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/RootViewController.o /Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.o /Users/Ryan/Documents/Xcode/Exercise/Exercise.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseViewControllerX.o /Users/Ryan/Documents/Xcode/Exercise/ExerciseViewControllerX.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise normal i386
+cGenerateDSYMFile /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app.dSYM /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise
+cTouch /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app
 
 N/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk
 c000000004F0A0D320000000000000110
@@ -63,9 +66,9 @@ s552
 i<UIKit/UIKit.h>
 
 N/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m
-c000000005009B2E300000000000015C1
-t1342812899
-s5569
+c00000000500AEF4300000000000015B6
+t1342893891
+s5558
 i"ExerciseAppDelegate.h"
 i"RootViewController.h"
 i"Exercise.h"
@@ -138,15 +141,15 @@ t1342720515
 s18847
 
 N/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app
-t1342812884
+t1342893906
 s340
 
 N/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app.dSYM
-t1342812884
+t1342893906
 s102
 
 N/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise
-t1342812884
+t1342893906
 s25908
 
 N/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/ExerciseViewController.nib
@@ -187,8 +190,8 @@ t1342568559
 s8684
 
 N/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseAppDelegate.o
-t2
-s0
+t1342893905
+s59000
 
 N/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseViewControllerX.o
 t1342701648
@@ -219,7 +222,7 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies364505699#364505706#0(0"0(0#1#0"8622538784#0"0#
+lSLF07#2@18"Check dependencies364586885#364586894#0(0"0(0#1#0"8247620834010738688#0"0#
 
 CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.o /Users/Ryan/Documents/Xcode/Exercise/Exercise.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s364261359.284083
@@ -235,9 +238,9 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@55"Compile /Users/Ryan/Documents/Xcode/Exercise/Exercise.m364261359#364261359#0(0"0(0#0#47"/Users/Ryan/Documents/Xcode/Exercise/Exercise.m8604212032#1920"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cyuxbcntkhlwbbfxcswjhfdqzwko/Exercise_Prefix.pch -c /Users/Ryan/Documents/Xcode/Exercise/Exercise.m -o /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.o0#
 
 CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseAppDelegate.o /Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s364505706.697959
-e364505707.352975
-r0
+s364586703.473621
+e364586705.890990
+r1
 xCompileC
 xbuild/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseAppDelegate.o
 x/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m
@@ -245,12 +248,8 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-o/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m: In function '-[ExerciseAppDelegate applicationDidFinishLaunching:]':
-o/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m:38: error: 'Food' undeclared (first use in this function)
-o/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m:38: error: (Each undeclared identifier is reported only once
-o/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m:38: error: for each function it appears in.)
 o/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m:41:80: warning: unknown escape sequence '\R'
-lSLF07#2@74"Compile /Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m364505706#364505707#0(614"/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m: In function '-[ExerciseAppDelegate applicationDidFinishLaunching:]':/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m:38: error: 'Food' undeclared (first use in this function)/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m:38: error: (Each undeclared identifier is reported only once/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m:38: error: for each function it appears in.)/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m:41:80: warning: unknown escape sequence '\R'2(4@46"'Food' undeclared (first use in this function)364505707#137#125#0(6@66"/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m364505699#38#0#38#0#43"'*' undeclared (first use in this function)0(22@28"Unknown escape sequence '\R'364505707#502#112#0(6@66"/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m364505699#41#0#41#0#0"0(0#0#66"/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m8618850304#1950"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cyuxbcntkhlwbbfxcswjhfdqzwko/Exercise_Prefix.pch -c /Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m -o /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseAppDelegate.o1#
+lSLF07#2@74"Compile /Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m364586703#364586705#0(112"/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m:41:80: warning: unknown escape sequence '\R'1(22@28"Unknown escape sequence '\R'364586705#0#112#0(6@66"/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m364586691#41#0#41#0#0"0(0#0#66"/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m8621461888#1950"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cyuxbcntkhlwbbfxcswjhfdqzwko/Exercise_Prefix.pch -c /Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m -o /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseAppDelegate.o0#
 
 CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseViewControllerX.o /Users/Ryan/Documents/Xcode/Exercise/ExerciseViewControllerX.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s364394448.728166
@@ -335,23 +334,23 @@ x../../../Desktop/Food.png
 lSLF07#2@30"Copy ../../../Desktop/Food.png364505389#364505389#0(0"0(0#0#62"/Users/Ryan/Documents/Xcode/Exercise/../../../Desktop/Food.png8619841632#478"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Ryan/Documents/Xcode/Exercise/../../../Desktop/Food.png /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app0#
 
 CGenerateDSYMFile /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app.dSYM /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise
-s364505684.885913
-e364505684.904743
+s364586706.561368
+e364586706.685997
 r1
 xGenerateDSYMFile
 x/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app.dSYM
 x/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise
-lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/Exercise.app.dSYM build/Debug-iphonesimulator/Exercise.app/Exercise364505684#364505684#0(0"0(0#0#86"/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise8618231520#380"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise -o /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app.dSYM0#
+lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/Exercise.app.dSYM build/Debug-iphonesimulator/Exercise.app/Exercise364586706#364586706#0(0"0(0#0#86"/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise8621983968#380"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise -o /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app.dSYM0#
 
 CLd /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise normal i386
-s364505684.781786
-e364505684.885826
+s364586705.891324
+e364586706.561224
 r1
 xLd
 x/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise
 xnormal
 xi386
-lSLF07#2@91"Link /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise364505684#364505684#0(0"0(0#0#0"8619058240#895"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator -F/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator -filelist /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise0#
+lSLF07#2@91"Link /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise364586705#364586706#0(0"0(0#0#0"8623139712#895"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator -F/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator -filelist /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise0#
 
 CProcessInfoPlistFile /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Info.plist Exercise-Info.plist
 s364261177.378718
@@ -376,10 +375,10 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@30"Precompile Exercise_Prefix.pch364261179#364261180#0(0"0(0#0#56"/Users/Ryan/Documents/Xcode/Exercise/Exercise_Prefix.pch8612030592#1805"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -c /Users/Ryan/Documents/Xcode/Exercise/Exercise_Prefix.pch -o /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cyuxbcntkhlwbbfxcswjhfdqzwko/Exercise_Prefix.pch.gch0#
 
 CTouch /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app
-s364505684.904811
-e364505684.906612
+s364586706.686070
+e364586706.706948
 r1
 xTouch
 x/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app
-lSLF07#2@83"Touch /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app364505684#364505684#0(0"0(0#0#0"8617995936#275"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app0#
+lSLF07#2@83"Touch /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app364586706#364586706#0(0"0(0#0#0"8622555040#275"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app0#
 
