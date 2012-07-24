@@ -25,13 +25,13 @@
 
 - (void)viewDidLoad
 {
-    self.title = @"Workout Queue";
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-    
+    [super viewDidLoad];
+    self.navigationItem.title = @"Workout Queue";
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;//Edit to be somewhere 
+    /*
     UIBarButtonItem * btn = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:(UIBarButtonItemStyleBordered) target:self action:@selector(addTodo:)];
     self.navigationItem.rightBarButtonItem = btn;
-    
-    //[super viewDidLoad];
+    */
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;

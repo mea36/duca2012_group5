@@ -15,10 +15,10 @@
     IBOutlet UIButton *todoButton;
     //Todo *todo;
 }
-
+/*
 @property(nonatomic,retain) IBOutlet
 @property(nonatomic,retain) IBOutlet
 @property(nonatomic,retain) IBOutlet
 //@property(nonatomic,retain) Todo *todo;
-
+*/
 @end

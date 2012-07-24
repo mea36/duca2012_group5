@@ -10,6 +10,7 @@
 #import "ExerciseAppDelegate.h"
 #import "RootViewController.h"
 #import "Exercise.h"
+#import "WQViewController.h"
 
 @interface ViewController ()
 
@@ -136,20 +137,20 @@
 {
     NSString* nextPage = [self.menuitems objectAtIndex:indexPath.row];
     // Navigation logic may go here. Create and push another view controller.
+    UITableViewController *nextView;
     if ([nextPage isEqualToString:@"Exercises"]) {
-        RootViewController *nextView = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
+        nextView = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
         // ...
         // Pass the selected object to the new view controller.
-        [self.navigationController pushViewController:nextView animated:YES];
-        [nextView release];
+        
     }
     if ([nextPage isEqualToString:@"Workout Queue"]) {
-        UITableViewController *nextView = [[UITableViewController alloc] initWithNibName:@"WQViewController" bundle:nil];
+        nextView = [[WQViewController alloc] initWithNibName:@"WQViewController" bundle:nil];
         // ...
         // Pass the selected object to the new view controller.
-        [self.navigationController pushViewController:nextView animated:YES];
-        [nextView release];
     }
+    [self.navigationController pushViewController:nextView animated:YES];
+    [nextView release];
 }
 
 @end
