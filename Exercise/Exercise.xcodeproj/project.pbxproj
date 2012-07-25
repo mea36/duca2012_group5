@@ -27,6 +27,24 @@
 		94D00C7615B7454600084BA7 /* ExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D00C7515B7454600084BA7 /* ExerciseViewController.xib */; };
 		94D00C7E15B7459400084BA7 /* ExerciseViewControllerX.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D00C7C15B7459400084BA7 /* ExerciseViewControllerX.m */; };
 		94D00C7F15B7459400084BA7 /* ExerciseViewControllerX.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D00C7D15B7459400084BA7 /* ExerciseViewControllerX.xib */; };
+		94F60D3F15C0656000A3B5F3 /* imgres.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 94F60D3E15C0656000A3B5F3 /* imgres.jpeg */; };
+		94F60D4315C0664A00A3B5F3 /* crunches.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94F60D4215C0664A00A3B5F3 /* crunches.jpg */; };
+		94F60D4515C066E200A3B5F3 /* planking exercise.gif in Resources */ = {isa = PBXBuildFile; fileRef = 94F60D4415C066E200A3B5F3 /* planking exercise.gif */; };
+		94F60D4715C067D600A3B5F3 /* chin up-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94F60D4615C067D600A3B5F3 /* chin up-1.jpg */; };
+		94F60DE815C074E700A3B5F3 /* imgres-1.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 94F60DE715C074E700A3B5F3 /* imgres-1.jpeg */; };
+		94F60DED15C0753B00A3B5F3 /* hammer curls.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94F60DEC15C0753B00A3B5F3 /* hammer curls.jpg */; };
+		94F60DFA15C0769100A3B5F3 /* imgres-2.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 94F60DF915C0769100A3B5F3 /* imgres-2.jpeg */; };
+		94F60E0115C0776800A3B5F3 /* imgres-3.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 94F60E0015C0776800A3B5F3 /* imgres-3.jpeg */; };
+		94F60E0915C077D200A3B5F3 /* imgres-4.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 94F60E0815C077D200A3B5F3 /* imgres-4.jpeg */; };
+		94F60E0E15C0782700A3B5F3 /* imgres-5.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 94F60E0D15C0782700A3B5F3 /* imgres-5.jpeg */; };
+		94F60E1315C0789300A3B5F3 /* imgres-6.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 94F60E1215C0789300A3B5F3 /* imgres-6.jpeg */; };
+		94F60E1815C078E700A3B5F3 /* lunge.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94F60E1715C078E700A3B5F3 /* lunge.jpg */; };
+		94F60E1D15C0797700A3B5F3 /* Jump Squat.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 94F60E1C15C0797700A3B5F3 /* Jump Squat.jpeg */; };
+		94F60E2115C07A0C00A3B5F3 /* wallsit.gif in Resources */ = {isa = PBXBuildFile; fileRef = 94F60E2015C07A0C00A3B5F3 /* wallsit.gif */; };
+		94F60E2315C07A4B00A3B5F3 /* push ups.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 94F60E2215C07A4B00A3B5F3 /* push ups.jpg */; };
+		94F60E2A15C07ABF00A3B5F3 /* diamond pushups.png in Resources */ = {isa = PBXBuildFile; fileRef = 94F60E2915C07ABF00A3B5F3 /* diamond pushups.png */; };
+		94F60E3415C07CB300A3B5F3 /* imgres-7.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 94F60E3315C07CB300A3B5F3 /* imgres-7.jpeg */; };
+		94F60E3C15C07D2100A3B5F3 /* dumbbell arm extension.gif in Resources */ = {isa = PBXBuildFile; fileRef = 94F60E3B15C07D2100A3B5F3 /* dumbbell arm extension.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +80,24 @@
 		94D00C7B15B7459400084BA7 /* ExerciseViewControllerX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExerciseViewControllerX.h; path = ../ExerciseViewControllerX.h; sourceTree = "<group>"; };
 		94D00C7C15B7459400084BA7 /* ExerciseViewControllerX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExerciseViewControllerX.m; path = ../ExerciseViewControllerX.m; sourceTree = "<group>"; };
 		94D00C7D15B7459400084BA7 /* ExerciseViewControllerX.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseViewControllerX.xib; sourceTree = "<group>"; };
+		94F60D3E15C0656000A3B5F3 /* imgres.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = imgres.jpeg; sourceTree = "<group>"; };
+		94F60D4215C0664A00A3B5F3 /* crunches.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = crunches.jpg; sourceTree = "<group>"; };
+		94F60D4415C066E200A3B5F3 /* planking exercise.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "planking exercise.gif"; sourceTree = "<group>"; };
+		94F60D4615C067D600A3B5F3 /* chin up-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "chin up-1.jpg"; sourceTree = "<group>"; };
+		94F60DE715C074E700A3B5F3 /* imgres-1.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imgres-1.jpeg"; sourceTree = "<group>"; };
+		94F60DEC15C0753B00A3B5F3 /* hammer curls.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "hammer curls.jpg"; sourceTree = "<group>"; };
+		94F60DF915C0769100A3B5F3 /* imgres-2.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imgres-2.jpeg"; sourceTree = "<group>"; };
+		94F60E0015C0776800A3B5F3 /* imgres-3.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imgres-3.jpeg"; sourceTree = "<group>"; };
+		94F60E0815C077D200A3B5F3 /* imgres-4.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imgres-4.jpeg"; sourceTree = "<group>"; };
+		94F60E0D15C0782700A3B5F3 /* imgres-5.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imgres-5.jpeg"; sourceTree = "<group>"; };
+		94F60E1215C0789300A3B5F3 /* imgres-6.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imgres-6.jpeg"; sourceTree = "<group>"; };
+		94F60E1715C078E700A3B5F3 /* lunge.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = lunge.jpg; sourceTree = "<group>"; };
+		94F60E1C15C0797700A3B5F3 /* Jump Squat.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Jump Squat.jpeg"; sourceTree = "<group>"; };
+		94F60E2015C07A0C00A3B5F3 /* wallsit.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = wallsit.gif; sourceTree = "<group>"; };
+		94F60E2215C07A4B00A3B5F3 /* push ups.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "push ups.jpg"; sourceTree = "<group>"; };
+		94F60E2915C07ABF00A3B5F3 /* diamond pushups.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "diamond pushups.png"; sourceTree = "<group>"; };
+		94F60E3315C07CB300A3B5F3 /* imgres-7.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "imgres-7.jpeg"; sourceTree = "<group>"; };
+		94F60E3B15C07D2100A3B5F3 /* dumbbell arm extension.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "dumbbell arm extension.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +173,24 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				94F60E3B15C07D2100A3B5F3 /* dumbbell arm extension.gif */,
+				94F60E3315C07CB300A3B5F3 /* imgres-7.jpeg */,
+				94F60E2915C07ABF00A3B5F3 /* diamond pushups.png */,
+				94F60E2215C07A4B00A3B5F3 /* push ups.jpg */,
+				94F60E2015C07A0C00A3B5F3 /* wallsit.gif */,
+				94F60E1C15C0797700A3B5F3 /* Jump Squat.jpeg */,
+				94F60E1715C078E700A3B5F3 /* lunge.jpg */,
+				94F60E1215C0789300A3B5F3 /* imgres-6.jpeg */,
+				94F60E0D15C0782700A3B5F3 /* imgres-5.jpeg */,
+				94F60E0815C077D200A3B5F3 /* imgres-4.jpeg */,
+				94F60E0015C0776800A3B5F3 /* imgres-3.jpeg */,
+				94F60DF915C0769100A3B5F3 /* imgres-2.jpeg */,
+				94F60DEC15C0753B00A3B5F3 /* hammer curls.jpg */,
+				94F60DE715C074E700A3B5F3 /* imgres-1.jpeg */,
+				94F60D4615C067D600A3B5F3 /* chin up-1.jpg */,
+				94F60D4415C066E200A3B5F3 /* planking exercise.gif */,
+				94F60D4215C0664A00A3B5F3 /* crunches.jpg */,
+				94F60D3E15C0656000A3B5F3 /* imgres.jpeg */,
 				28F335F01007B36200424DE2 /* RootViewController.xib */,
 				28AD735F0D9D9599002E5188 /* MainWindow.xib */,
 				6F3F89E815BDEAA8003EEED1 /* ViewController.xib */,
@@ -214,6 +268,24 @@
 				6F3F89EA15BDEAA8003EEED1 /* ViewController.xib in Resources */,
 				6F3F89FE15BF247A003EEED1 /* WQViewController.xib in Resources */,
 				6F3F8A0715BF2624003EEED1 /* TodoViewController.xib in Resources */,
+				94F60D3F15C0656000A3B5F3 /* imgres.jpeg in Resources */,
+				94F60D4315C0664A00A3B5F3 /* crunches.jpg in Resources */,
+				94F60D4515C066E200A3B5F3 /* planking exercise.gif in Resources */,
+				94F60D4715C067D600A3B5F3 /* chin up-1.jpg in Resources */,
+				94F60DE815C074E700A3B5F3 /* imgres-1.jpeg in Resources */,
+				94F60DED15C0753B00A3B5F3 /* hammer curls.jpg in Resources */,
+				94F60DFA15C0769100A3B5F3 /* imgres-2.jpeg in Resources */,
+				94F60E0115C0776800A3B5F3 /* imgres-3.jpeg in Resources */,
+				94F60E0915C077D200A3B5F3 /* imgres-4.jpeg in Resources */,
+				94F60E0E15C0782700A3B5F3 /* imgres-5.jpeg in Resources */,
+				94F60E1315C0789300A3B5F3 /* imgres-6.jpeg in Resources */,
+				94F60E1815C078E700A3B5F3 /* lunge.jpg in Resources */,
+				94F60E1D15C0797700A3B5F3 /* Jump Squat.jpeg in Resources */,
+				94F60E2115C07A0C00A3B5F3 /* wallsit.gif in Resources */,
+				94F60E2315C07A4B00A3B5F3 /* push ups.jpg in Resources */,
+				94F60E2A15C07ABF00A3B5F3 /* diamond pushups.png in Resources */,
+				94F60E3415C07CB300A3B5F3 /* imgres-7.jpeg in Resources */,
+				94F60E3C15C07D2100A3B5F3 /* dumbbell arm extension.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

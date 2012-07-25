@@ -149,27 +149,22 @@
 	ExerciseAppDelegate *appDelegate = (ExerciseAppDelegate *)[[UIApplication sharedApplication] delegate];
 	Exercise *exercise = (Exercise *)[appDelegate.exercises objectAtIndex:indexPath.row];
 	
-	if(self.exerciseView == nil) {
+	//if(self.exerciseView == nil) {
 		ExerciseViewControllerX *viewController = [[ExerciseViewControllerX alloc] initWithNibName:@"ExerciseViewControllerX" bundle:[NSBundle mainBundle]];
-		self.exerciseView = viewController;
-		[viewController release];
-		[self.exerciseView.exerciseDescription setText:[exercise description]];
-	}
-	
-	[self.navigationController pushViewController:self.exerciseView animated:YES];
-	self.exerciseView.title = [exercise name];
-	[self.exerciseView.exerciseDescription setText:[exercise description]];
-	
-}
-    
-	/*
-	 <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-     // ...
-     // Pass the selected object to the new view controller.
-	 [self.navigationController pushViewController:detailViewController animated:YES];
-	 [detailViewController release];
-	 */
+		//self.exerciseView = viewController;
+		
+	//}
+	[viewController.exerciseDescription setText:[exercise description]];
+	viewController.imageLocation = [exercise image];
+	NSLog(@"image in root = %@", viewController.imageLocation);
 
+	viewController.title = [exercise name];
+	[viewController.exerciseDescription setText:[exercise description]];
+	viewController.exercise = exercise;
+	[self.navigationController pushViewController:viewController animated:YES];
+	
+	[viewController release];
+}
 
 
 #pragma mark -

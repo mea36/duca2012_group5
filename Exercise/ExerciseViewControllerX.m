@@ -10,7 +10,7 @@
 
 
 @implementation ExerciseViewControllerX
-@synthesize exerciseDescription;
+@synthesize exerciseDescription, exerciseImage, imageLocation, exercise;
 
 // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
 /*
@@ -23,12 +23,29 @@
 }
 */
 
-/*
+
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+	NSLog(@"in exercise");
+	if (self.imageLocation != nil) {
+		NSLog(@"image is not nil");
+		UIImage * myImage = [UIImage imageNamed:self.exercise.image];
+		UIImageView* imageView = [[UIImageView alloc] initWithImage:myImage];
+		imageView.frame = CGRectMake(0, 260, 320, 140);
+		imageView.contentMode = UIViewContentModeScaleAspectFit;
+		[self.view addSubview:imageView];
+		[imageView release];
+	}
+	
+	self.exerciseDescription.frame = CGRectMake(0, 0, 320, 401);
+	[self.exerciseDescription setText:self.exercise.description];
+	self.exerciseDescription.autoresizingMask = UIViewAutoresizingFlexibleHeight;
+
+	
+		
 }
-*/
+
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -53,6 +70,10 @@
 
 
 - (void)dealloc {
+	[exerciseImage release];
+	[exerciseDescription release];
+	[imageLocation release];
+	[exercise release];
     [super dealloc];
 }
 

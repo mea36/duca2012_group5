@@ -1,0 +1,3 @@
+/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../Exercise.m:13: error: no declaration of property 'image' found in the interface
+/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../Exercise.m: In function '-[Exercise initWithName:description:]':
+/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../Exercise.m:18: error: request for member 'image' in something not a structure or union

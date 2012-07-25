@@ -10,11 +10,12 @@
 
 
 @implementation Exercise
-@synthesize name,description;
+@synthesize name,description, image;
 
 - (id)initWithName:(NSString *)n description:(NSString *)desc {
 	self.name = n;
 	self.description = desc;
+	self.image = nil;
 	return self;
 }
 @end
