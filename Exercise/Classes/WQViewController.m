@@ -7,12 +7,18 @@
 //
 
 #import "WQViewController.h"
+#import "ExerciseAppDelegate.h"
+#import "Exercise.h"
+#import "TodoCell.h"
+#import "Todo.h"
+#import "ViewController.h"
 
 @interface WQViewController ()
 
 @end
 
 @implementation WQViewController
+@synthesize todoView;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -27,11 +33,12 @@
 {
     [super viewDidLoad];
     self.navigationItem.title = @"Workout Queue";
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;//Edit to be somewhere 
-    /*
+    //self.navigationItem.leftBarButtonItem = self.editButtonItem;//Edit to be somewhere else on the screen
+    
+    
     UIBarButtonItem * btn = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:(UIBarButtonItemStyleBordered) target:self action:@selector(addTodo:)];
     self.navigationItem.rightBarButtonItem = btn;
-    */
+    
 
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -40,7 +47,36 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)viewDidUnload
+- (void)addTodo:(id)sender {
+    ExerciseAppDelegate *appDelegate = (ExerciseAppDelegate *)[[UIApplication sharedApplication] delegate];
+    
+    if(self.todoView == nil) {
+        TodoViewController *viewController = [[TodoViewController alloc]
+                                              initWithNibName:@"TodoViewController" bundle:[NSBundle mainBundle]];
+        self.todoView = viewController;
+        [viewController release];
+    }
+    
+    Todo *todo = [appDelegate addTodo];
+    [self.navigationController pushViewController:self.todoView animated:YES];
+    self.todoView.todo = todo;
+    self.todoView.title = todo.text;
+    [self.todoView.todoText setText:todo.text];
+}
+
+- (void)setEditing:(BOOL)editing animated:(BOOL)animated {
+    // Updates the appearance of the Edit|Done button as necessary.
+    [super setEditing:editing animated:animated];
+    [self.tableView setEditing:editing animated:YES];
+    // Disable the add button while editing.
+    if (editing) {
+        self.navigationItem.rightBarButtonItem.enabled = NO;
+    } else {
+        self.navigationItem.rightBarButtonItem.enabled = YES;
+    }
+}
+
+- (void)viewDidUnload //Comment this method out?
 {
     [super viewDidUnload];
     // Release any retained subviews of the main view.
@@ -57,13 +93,12 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 0;
+    return 1;
 }
 
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
-    // Return the number of rows in the section.
-    return 0;
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+	ExerciseAppDelegate *appDelegate = (ExerciseAppDelegate *)[[UIApplication sharedApplication] delegate];
+    return appDelegate.todos.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath

@@ -9,7 +9,11 @@
 #import "ExerciseAppDelegate.h"
 #import "RootViewController.h"
 #import "Exercise.h"
+#import "ViewController.h"
+#import "Todo.h"
 
+@interface ExerciseAppDelegate (Private)
+@end
 
 @implementation ExerciseAppDelegate
 
@@ -18,26 +22,69 @@
 @synthesize exercises;
 @synthesize todos;
 
-/*- (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
-    if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
-        UIView *myContentView = self.contentView;
-        
-        self.todoMeasurement = [self newLabelWithPrimaryColor:[UIColor blackColor]
-                                              selectedColor:[UIColor whiteColor] fontSize:14.0 bold:YES];
-        self.todoMeasurement.textAllignment = UITextAlignmentLeft;
-        [myContentView addSubview:self.todoTextLabel];
-        [self.todoMeasurement release];
-        
-        self.todoData = [self newLabelWithPrimaryColor:[UIColor blackColor]
-                                              selectedColor:[UIColor whiteColor] fontSize:10.0 bold:YES];
-        self.todoData.textAllignment = UITextAlignmentRight;
-        [myContentView addSubview:self.todoData];
-        [self.todoData release];
-        
-//        [myContentView bringSubviewToFront:self.todoPriorityImageView]
-    }
-    return self
+- (id)init {
+	if (self = [super init]) {
+		// 
+	}
+	return self;
+}
+
+
+/*- (void)applicationDidFinishLaunching:(UIApplication *)application {
+	
+	[self initializeDatabase];
+	
+	// Configure and show the window
+	[window addSubview:[navigationController view]];
+	[window makeKeyAndVisible];
 }*/
+
+
+// Open the database connection and retrieve minimal information for all objects.
+- (void)initializeDatabase {
+    NSMutableArray *todoArray = [[NSMutableArray alloc] init];
+    self.todos = todoArray;
+    [todoArray release];
+    
+    int i = 0;
+    for (i = 0; i < 3; i++) {
+        Todo *td = [[Todo alloc] init ];
+        td.text = [NSString stringWithFormat:@"I am task # %d", i];
+        td.priority = 1;
+        td.status = 0;
+        [todos addObject:td];
+        [td release];
+    }
+}
+
+-(void)removeTodo:(Todo *)todo {
+	NSUInteger index = [todos indexOfObject:todo];
+    
+    if (index == NSNotFound) return;
+    
+    //[todo deleteFromDatabase];
+    [todos removeObject:todo];
+}
+
+-(Todo *) addTodo {
+   
+    Todo *td = [[Todo alloc] init ];
+    //    td.text = [NSString stringWithFormat:@"Go %d", 1];
+    td.text = @"Exercise";
+    td.priority = 1;
+    td.status = 0;
+    [todos addObject:td];
+    return td;
+    //[td release];
+    //NSString *g = [NSString @"I am task # %d"];
+    //[todos addObject:g];//NSInteger primaryKey = [Todo insertNewTodoIntoDatabase:database];//Should I replace "insertNewTodo..." with "addObject"? How do I replace "database"?
+    //Todo *newTodo = [[Todo alloc] initWithPrimaryKey:primaryKey database:database];//Todo *newTodo = [[Todo alloc] initWithPrimaryKey:primaryKey database:database];
+    
+	//[todos addObject:newTodo];
+    //return g; //return newTodo;
+}
+
+
 
 
 #pragma mark -
@@ -137,6 +184,8 @@
      Called when the application is about to terminate.
      See also applicationDidEnterBackground:.
      */
+    // Save data if appropriate
+    [todos makeObjectsPerformSelector:@selector(dehydrate)];
 }
 
 

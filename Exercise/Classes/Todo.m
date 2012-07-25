@@ -9,5 +9,17 @@
 #import "Todo.h"
 
 @implementation Todo
+@synthesize primaryKey,text,priority,status;
+
+- (void)updateStatus:(NSInteger)newStatus {
+	self.status = newStatus;
+	dirty = YES;
+	
+}
+
+- (void)updatePriority:(NSInteger)newPriority {
+	self.priority = newPriority;
+	dirty = YES;
+}
 
 @end

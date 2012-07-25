@@ -7,11 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "TodoViewController.h"
 
 @interface ViewController : UITableViewController {
     NSArray *menuitems;
+    TodoViewController *todoView;
 }
 
 @property (nonatomic, retain) NSArray *menuitems;
+@property (nonatomic, retain) TodoViewController *todoView;
 
 @end

@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
 @interface ExerciseAppDelegate : NSObject <UIApplicationDelegate> {
     
@@ -15,12 +16,19 @@
 	
 	NSMutableArray *exercise;
     NSMutableArray *todos;
+    //NSString *database;
 }
+
+//-(Todo *)addTodo;
 
 @property (nonatomic, retain) UIWindow *window;
 @property (nonatomic, retain) UINavigationController *navigationController;
 @property (nonatomic, retain) NSMutableArray *exercises;
 @property (nonatomic, retain) NSMutableArray *todos;
+@property (nonatomic, retain) NSString *database;
+
+-(void)removeTodo:(Todo *)todo;
+-(Todo *)addTodo;
 
 @end
 

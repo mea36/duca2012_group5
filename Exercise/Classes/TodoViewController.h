@@ -7,14 +7,30 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Todo.h"
 
 @interface TodoViewController : UIViewController {
-    IBOutlet UITextView *todoValue;
-    IBOutlet UITextView *todoSetAmount;    
+    IBOutlet UITextField *todoValue;
+    IBOutlet UITextField *todoSetAmount;    
     IBOutlet UISegmentedControl *todoUnit;
     IBOutlet UIButton *todoButton;
-    //Todo *todo;
+    IBOutlet UITextField        *todoText;
+    IBOutlet UILabel            *todoStatus;
+    Todo *todo;
 }
+
+@property(nonatomic,retain) IBOutlet UITextField        *todoText;
+@property(nonatomic,retain) IBOutlet UITextField        *todoValue;
+@property(nonatomic,retain) IBOutlet UITextField        *todoSetAmount;;
+@property(nonatomic,retain) IBOutlet UISegmentedControl *todoUnit;
+@property(nonatomic,retain) IBOutlet UIButton           *todoButton;
+@property(nonatomic,retain) IBOutlet UILabel            *todoStatus;
+@property(nonatomic,retain) Todo						*todo;
+
+- (IBAction) updateStatus:(id) sender;
+- (IBAction) updatePriority:(id) sender;
+- (IBAction) updateText:(id) sender;
+
 /*
 @property(nonatomic,retain) IBOutlet
 @property(nonatomic,retain) IBOutlet
