@@ -1,19 +1,27 @@
 TExercise
 v7
 r0
-t364850671.894064
+t364921241.249931
 cCheck dependencies
 cProcessInfoPlistFile /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Info.plist Exercise-Info.plist
 cCompileXIB /Users/Ryan/Desktop/duca2012_group5/Exercise/MainWindow.xib
 cCompileXIB /Users/Ryan/Desktop/duca2012_group5/Exercise/RootViewController.xib
 cCompileXIB /Users/Ryan/Desktop/duca2012_group5/Exercise/ExerciseViewController.xib
 cCompileXIB /Users/Ryan/Desktop/duca2012_group5/Exercise/ExerciseViewControllerX.xib
+cCompileXIB /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.xib
+cCompileXIB /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/WQViewController.xib
+cCompileXIB /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoViewController.xib
 cProcessPCH /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cghimzyweenfmrbfgrwwzefqvgjk/Exercise_Prefix.pch.gch Exercise_Prefix.pch normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/main.o /Users/Ryan/Desktop/duca2012_group5/Exercise/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseAppDelegate.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ExerciseAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/RootViewController.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Exercise.m normal i386 objective-c com.apple.compilers.gcc.4_2
-cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseViewControllerX.o /Users/Ryan/Desktop/duca2012_group5/Exercise/ExerciseViewControllerX.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../Exercise.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseViewControllerX.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../ExerciseViewControllerX.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ViewController.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/TodoCell.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Todo.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/Todo.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/WQViewController.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/WQViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/TodoViewController.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 cLd /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise normal i386
 cGenerateDSYMFile /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app.dSYM /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise
 cTouch /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app
@@ -58,16 +66,40 @@ c00000000000000000000000000000000
 t2
 s0
 
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../Exercise.h
+c000000005005F7AC000000000000018B
+t1342568364
+s395
+i<UIKit/UIKit.h>
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../Exercise.m
+c000000005005F8100000000000000153
+t1342568464
+s339
+i"Exercise.h"
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../ExerciseViewControllerX.h
+c0000000050070E730000000000000160
+t1342639731
+s352
+i<UIKit/UIKit.h>
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../ExerciseViewControllerX.m
+c0000000050070F7E00000000000005D9
+t1342639998
+s1497
+i"ExerciseViewControllerX.h"
+
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ExerciseAppDelegate.h
-c000000005006EC7B0000000000000228
-t1342631035
-s552
+c00000000500FEEE30000000000000278
+t1343221475
+s632
 i<UIKit/UIKit.h>
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ExerciseAppDelegate.m
-c00000000500EF6A20000000000002D92
-t1343157922
-s11666
+c0000000050100A160000000000003265
+t1343228438
+s12901
 i"ExerciseAppDelegate.h"
 i"RootViewController.h"
 i"Exercise.h"
@@ -86,6 +118,85 @@ s5498
 i"RootViewController.h"
 i"ExerciseAppDelegate.h"
 i"Exercise.h"
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/Todo.h
+c00000000500FEEE300000000000000EC
+t1343221475
+s236
+i<Foundation/Foundation.h>
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/Todo.m
+c00000000500FEEE300000000000000B8
+t1343221475
+s184
+i"Todo.h"
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoCell.h
+c00000000500FEEE300000000000001FA
+t1343221475
+s506
+i<UIKit/UIKit.h>
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoCell.m
+c00000000500FEEE30000000000000321
+t1343221475
+s801
+i"TodoCell.h"
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoViewController.h
+c00000000500FEEE3000000000000023B
+t1343221475
+s571
+i<UIKit/UIKit.h>
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoViewController.m
+c00000000500FEEE30000000000000399
+t1343221475
+s921
+i"TodoViewController.h"
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoViewController.xib
+c00000000500FEEE30000000000004A41
+t1343221475
+s19009
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.h
+c00000000500EF70D0000000000000135
+t1343158029
+s309
+i<UIKit/UIKit.h>
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.m
+c00000000500FEEE300000000000011E9
+t1343221475
+s4585
+i"ViewController.h"
+i"ExerciseAppDelegate.h"
+i"RootViewController.h"
+i"Exercise.h"
+i"WQViewController.h"
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.xib
+c00000000500EF70D00000000000027A0
+t1343158029
+s10144
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/WQViewController.h
+c00000000500FEEE300000000000000EA
+t1343221475
+s234
+i<UIKit/UIKit.h>
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/WQViewController.m
+c00000000500FEEE30000000000000F71
+t1343221475
+s3953
+i"WQViewController.h"
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/WQViewController.xib
+c00000000500FEEE30000000000001849
+t1343221475
+s6217
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/Exercise.h
 c000000005005F7AC000000000000018B
@@ -130,9 +241,9 @@ i<Foundation/Foundation.h>
 i<UIKit/UIKit.h>
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/MainWindow.xib
-c000000005005F67C0000000000005FF8
-t1342568060
-s24568
+c00000000500EF70D000000000000357A
+t1343158029
+s13690
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/RootViewController.xib
 c0000000050084A03000000000000499F
@@ -140,16 +251,16 @@ t1342720515
 s18847
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app
-t1343157871
-s306
+t1343228441
+s408
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app.dSYM
-t1343157871
+t1343228441
 s102
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise
-t1343157871
-s34184
+t1343228441
+s50000
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/ExerciseViewController.nib
 t1342701646
@@ -168,8 +279,8 @@ t1342568377
 s595
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/MainWindow.nib
-t1342568379
-s2457
+t1343221572
+s2451
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/PkgInfo
 t1342568377
@@ -179,26 +290,58 @@ N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exerci
 t1342720600
 s1493
 
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/TodoViewController.nib
+t1343221572
+s4136
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/ViewController.nib
+t1343221572
+s1491
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/WQViewController.nib
+t1343221572
+s1516
+
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.LinkFileList
-c00000000500D94A000000000000002BE
-t1343067296
-s702
+c00000000500FEF430000000000000570
+t1343221571
+s1392
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.o
-t1343067314
-s8700
+t1343221573
+s8724
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseAppDelegate.o
-t1343157871
-s67496
+t1343228441
+s68784
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseViewControllerX.o
-t1343067314
-s40576
+t1343221573
+s40600
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/RootViewController.o
-t1343067314
-s54496
+t1343221573
+s54524
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Todo.o
+t1343221573
+s5028
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/TodoCell.o
+t1343221573
+s40212
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/TodoViewController.o
+t1343221573
+s40956
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ViewController.o
+t1343221573
+s47700
+
+N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/WQViewController.o
+t1343221573
+s41748
 
 N/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/main.o
 t1343067314
@@ -382,7 +525,20 @@ s909
 
 CCheck dependencies
 r0
-lSLF07#2@18"Check dependencies364850664#364850670#0(0"0(0#1#0"8615278176#0"0#
+lSLF07#2@18"Check dependencies364921241#364921241#0(0"0(0#1#0"8607491936#0"0#
+
+CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../Exercise.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s364914372.212312
+e364914373.213566
+r1
+xCompileC
+xbuild/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.o
+x/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../Exercise.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@74"Compile /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../Exercise.m364914372#364914373#0(0"0(0#0#66"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../Exercise.m8603631968#2019"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cghimzyweenfmrbfgrwwzefqvgjk/Exercise_Prefix.pch -c /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../Exercise.m -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.o0#
 
 CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Exercise.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s364760112.518633
@@ -411,8 +567,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@55"Compile /Users/Ryan/Documents/Xcode/Exercise/Exercise.m364261359#364261359#0(0"0(0#0#47"/Users/Ryan/Documents/Xcode/Exercise/Exercise.m8604212032#1920"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cyuxbcntkhlwbbfxcswjhfdqzwko/Exercise_Prefix.pch -c /Users/Ryan/Documents/Xcode/Exercise/Exercise.m -o /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.o0#
 
 CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseAppDelegate.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ExerciseAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s364850670.268715
-e364850671.340951
+s364921241.149470
+e364921241.207033
 r1
 xCompileC
 xbuild/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseAppDelegate.o
@@ -421,7 +577,7 @@ xnormal
 xi386
 xobjective-c
 xcom.apple.compilers.gcc.4_2
-lSLF07#2@82"Compile /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ExerciseAppDelegate.m364850670#364850671#0(0"0(0#0#74"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ExerciseAppDelegate.m8602864864#2038"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cghimzyweenfmrbfgrwwzefqvgjk/Exercise_Prefix.pch -c /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ExerciseAppDelegate.m -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseAppDelegate.o0#
+lSLF07#2@82"Compile /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ExerciseAppDelegate.m364921241#364921241#0(0"0(0#0#74"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ExerciseAppDelegate.m8598391232#2038"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cghimzyweenfmrbfgrwwzefqvgjk/Exercise_Prefix.pch -c /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ExerciseAppDelegate.m -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseAppDelegate.o0#
 
 CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseAppDelegate.o /Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s364758812.044075
@@ -436,6 +592,19 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 o/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m:41:80: warning: unknown escape sequence '\R'
 lSLF07#2@74"Compile /Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m364758812#364758812#0(112"/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m:41:80: warning: unknown escape sequence '\R'1(22@28"Unknown escape sequence '\R'364758812#0#112#0(6@66"/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m364758801#41#0#41#0#0"0(0#0#66"/Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m8608974112#1950"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cyuxbcntkhlwbbfxcswjhfdqzwko/Exercise_Prefix.pch -c /Users/Ryan/Documents/Xcode/Exercise/Classes/ExerciseAppDelegate.m -o /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseAppDelegate.o0#
+
+CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseViewControllerX.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../ExerciseViewControllerX.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s364914372.212946
+e364914373.213782
+r1
+xCompileC
+xbuild/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseViewControllerX.o
+x/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../ExerciseViewControllerX.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@89"Compile /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../ExerciseViewControllerX.m364914372#364914373#0(0"0(0#0#81"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../ExerciseViewControllerX.m8604417984#2049"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cghimzyweenfmrbfgrwwzefqvgjk/Exercise_Prefix.pch -c /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/../ExerciseViewControllerX.m -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseViewControllerX.o0#
 
 CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseViewControllerX.o /Users/Ryan/Desktop/duca2012_group5/Exercise/ExerciseViewControllerX.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s364760112.519329
@@ -464,8 +633,8 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@70"Compile /Users/Ryan/Documents/Xcode/Exercise/ExerciseViewControllerX.m364394448#364394448#0(0"0(0#0#62"/Users/Ryan/Documents/Xcode/Exercise/ExerciseViewControllerX.m8620819616#1950"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cyuxbcntkhlwbbfxcswjhfdqzwko/Exercise_Prefix.pch -c /Users/Ryan/Documents/Xcode/Exercise/ExerciseViewControllerX.m -o /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ExerciseViewControllerX.o0#
 
 CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/RootViewController.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
-s364760112.517896
-e364760114.419100
+s364914372.211709
+e364914373.257213
 r1
 xCompileC
 xbuild/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/RootViewController.o
@@ -476,7 +645,7 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 o/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m: In function '-[RootViewController tableView:cellForRowAtIndexPath:]':
 o/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m:94: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:213)
-lSLF07#2@81"Compile /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m364760112#364760114#0(427"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m: In function '-[RootViewController tableView:cellForRowAtIndexPath:]':/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m:94: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:213)1(22@194"'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:213)364760112#145#282#0(6@73"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m364412548#94#0#94#0#33"'*' is deprecated (declared at *)0(0#0#73"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m8617579904#2036"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cghimzyweenfmrbfgrwwzefqvgjk/Exercise_Prefix.pch -c /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/RootViewController.o0#
+lSLF07#2@81"Compile /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m364914372#364914373#0(427"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m: In function '-[RootViewController tableView:cellForRowAtIndexPath:]':/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m:94: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:213)1(22@194"'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:213)364914373#145#282#0(6@73"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m364412548#94#0#94#0#33"'*' is deprecated (declared at *)0(0#0#73"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m8598399616#2036"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cghimzyweenfmrbfgrwwzefqvgjk/Exercise_Prefix.pch -c /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/RootViewController.m -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/RootViewController.o0#
 
 CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/RootViewController.o /Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s364412591.030334
@@ -492,6 +661,75 @@ xcom.apple.compilers.gcc.4_2
 o/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m: In function '-[RootViewController tableView:cellForRowAtIndexPath:]':
 o/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m:94: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:213)
 lSLF07#2@73"Compile /Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m364412591#364412592#0(411"/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m: In function '-[RootViewController tableView:cellForRowAtIndexPath:]':/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m:94: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:213)1(22@194"'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:213)364412591#137#274#0(6@65"/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m364412548#94#0#94#0#33"'*' is deprecated (declared at *)0(0#0#65"/Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m8620385664#1948"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cyuxbcntkhlwbbfxcswjhfdqzwko/Exercise_Prefix.pch -c /Users/Ryan/Documents/Xcode/Exercise/Classes/RootViewController.m -o /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/RootViewController.o0#
+
+CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Todo.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/Todo.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s364914372.214753
+e364914373.214080
+r1
+xCompileC
+xbuild/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Todo.o
+x/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/Todo.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@67"Compile /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/Todo.m364914372#364914373#0(0"0(0#0#59"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/Todo.m8602875360#2008"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cghimzyweenfmrbfgrwwzefqvgjk/Exercise_Prefix.pch -c /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/Todo.m -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Todo.o0#
+
+CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/TodoCell.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoCell.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s364914372.214149
+e364914373.215219
+r1
+xCompileC
+xbuild/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/TodoCell.o
+x/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoCell.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoCell.m:35: warning: incomplete implementation of class 'TodoCell'
+o/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoCell.m:35: warning: method definition for '-newLabelWithPrimaryColor::fontsize:bold:' not found
+lSLF07#2@71"Compile /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoCell.m364914372#364914373#0(276"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoCell.m:35: warning: incomplete implementation of class 'TodoCell'/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoCell.m:35: warning: method definition for '-newLabelWithPrimaryColor::fontsize:bold:' not found2(22@45"Incomplete implementation of class 'TodoCell'364914373#0#123#0(6@63"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoCell.m364914275#35#0#35#0#38"incomplete implementation of class '*'0(22@75"Method definition for '-newLabelWithPrimaryColor::fontsize:bold:' not found364914373#123#153#0(6@63"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoCell.m364914275#35#0#35#0#35"method definition for '*' not found0(0#0#63"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoCell.m8598093408#2016"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cghimzyweenfmrbfgrwwzefqvgjk/Exercise_Prefix.pch -c /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoCell.m -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/TodoCell.o0#
+
+CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/TodoViewController.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s364914373.214150
+e364914373.285851
+r1
+xCompileC
+xbuild/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/TodoViewController.o
+x/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@81"Compile /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoViewController.m364914373#364914373#0(0"0(0#0#73"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoViewController.m7307761437599099904#2036"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cghimzyweenfmrbfgrwwzefqvgjk/Exercise_Prefix.pch -c /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoViewController.m -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/TodoViewController.o0#
+
+CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ViewController.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s364914372.213550
+e364914373.256907
+r1
+xCompileC
+xbuild/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ViewController.o
+x/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+o/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.m: In function '-[ViewController tableView:cellForRowAtIndexPath:]':
+o/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.m:88: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:213)
+lSLF07#2@77"Compile /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.m364914372#364914373#0(415"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.m: In function '-[ViewController tableView:cellForRowAtIndexPath:]':/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.m:88: warning: 'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:213)1(22@194"'setText:' is deprecated (declared at /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk/System/Library/Frameworks/UIKit.framework/Headers/UITableViewCell.h:213)364914373#137#278#0(6@69"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.m364914275#88#0#88#0#33"'*' is deprecated (declared at *)0(0#0#69"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.m8604100576#2028"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cghimzyweenfmrbfgrwwzefqvgjk/Exercise_Prefix.pch -c /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.m -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/ViewController.o0#
+
+CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/WQViewController.o /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/WQViewController.m normal i386 objective-c com.apple.compilers.gcc.4_2
+s364914372.215460
+e364914373.215409
+r1
+xCompileC
+xbuild/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/WQViewController.o
+x/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/WQViewController.m
+xnormal
+xi386
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@79"Compile /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/WQViewController.m364914372#364914373#0(0"0(0#0#71"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/WQViewController.m8604442976#2032"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cghimzyweenfmrbfgrwwzefqvgjk/Exercise_Prefix.pch -c /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/WQViewController.m -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/WQViewController.o0#
 
 CCompileC build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/main.o /Users/Ryan/Desktop/duca2012_group5/Exercise/main.m normal i386 objective-c com.apple.compilers.gcc.4_2
 s364760112.307081
@@ -519,6 +757,31 @@ xobjective-c
 xcom.apple.compilers.gcc.4_2
 lSLF07#2@51"Compile /Users/Ryan/Documents/Xcode/Exercise/main.m364261180#364261180#0(0"0(0#0#43"/Users/Ryan/Documents/Xcode/Exercise/main.m8603889600#1912"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -include /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cyuxbcntkhlwbbfxcswjhfdqzwko/Exercise_Prefix.pch -c /Users/Ryan/Documents/Xcode/Exercise/main.m -o /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/main.o0#
 
+CCompileXIB /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoViewController.xib
+s364914371.464484
+e364914372.210661
+r1
+xCompileXIB
+x/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoViewController.xib
+oCouldn't open shared capabilities memory GSCapabilities (No such file or directory)
+lSLF07#2@41"CompileXIB Classes/TodoViewController.xib364914371#364914372#0(84"Couldn't open shared capabilities memory GSCapabilities (No such file or directory)0(0#0#75"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoViewController.xib8603840416#613"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/TodoViewController.nib /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/TodoViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.xib
+s364914371.463019
+e364914372.185869
+r1
+xCompileXIB
+x/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.xib
+lSLF07#2@37"CompileXIB Classes/ViewController.xib364914371#364914372#0(0"0(0#0#71"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.xib8603124288#605"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/ViewController.nib /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/ViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
+CCompileXIB /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/WQViewController.xib
+s364914371.463794
+e364914372.185957
+r1
+xCompileXIB
+x/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/WQViewController.xib
+lSLF07#2@39"CompileXIB Classes/WQViewController.xib364914371#364914372#0(0"0(0#0#73"/Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/WQViewController.xib8604195968#609"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/WQViewController.nib /Users/Ryan/Desktop/duca2012_group5/Exercise/Classes/WQViewController.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
+
 CCompileXIB /Users/Ryan/Desktop/duca2012_group5/Exercise/ExerciseViewController.xib
 r0
 
@@ -526,7 +789,12 @@ CCompileXIB /Users/Ryan/Desktop/duca2012_group5/Exercise/ExerciseViewControllerX
 r0
 
 CCompileXIB /Users/Ryan/Desktop/duca2012_group5/Exercise/MainWindow.xib
-r0
+s364914371.376263
+e364914372.185747
+r1
+xCompileXIB
+x/Users/Ryan/Desktop/duca2012_group5/Exercise/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib364914371#364914372#0(0"0(0#0#59"/Users/Ryan/Desktop/duca2012_group5/Exercise/MainWindow.xib14073959292076082#589"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 4.3    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/MainWindow.nib /Users/Ryan/Desktop/duca2012_group5/Exercise/MainWindow.xib --sdk /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk0#
 
 CCompileXIB /Users/Ryan/Desktop/duca2012_group5/Exercise/RootViewController.xib
 r0
@@ -574,13 +842,13 @@ opbxcp: Food.png: No such file or directory
 lSLF07#2@30"Copy ../../../Desktop/Food.png364847464#364847464#0(43"pbxcp: Food.png: No such file or directory1(4@42"pbxcp: Food.png: No such file or directory364847464#18446744073709551615#0#0(6@0"364847464#0#0#0#0#0"0(0#0#70"/Users/Ryan/Desktop/duca2012_group5/Exercise/../../../Desktop/Food.png8615812064#502"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -resolve-src-symlinks /Users/Ryan/Desktop/duca2012_group5/Exercise/../../../Desktop/Food.png /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app1#
 
 CGenerateDSYMFile /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app.dSYM /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise
-s364850671.727188
-e364850671.861012
+s364921241.227504
+e364921241.247961
 r1
 xGenerateDSYMFile
 x/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app.dSYM
 x/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise
-lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/Exercise.app.dSYM build/Debug-iphonesimulator/Exercise.app/Exercise364850671#364850671#0(0"0(0#0#94"/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise8614263072#404"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app.dSYM0#
+lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/Exercise.app.dSYM build/Debug-iphonesimulator/Exercise.app/Exercise364921241#364921241#0(0"0(0#0#94"/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise8607494464#404"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app.dSYM0#
 
 CGenerateDSYMFile /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app.dSYM /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise
 s364758812.754084
@@ -592,14 +860,14 @@ x/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/E
 lSLF07#2@112"GenerateDSYMFile build/Debug-iphonesimulator/Exercise.app.dSYM build/Debug-iphonesimulator/Exercise.app/Exercise364758812#364758813#0(0"0(0#0#86"/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise8600660512#380"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise -o /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app.dSYM0#
 
 CLd /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise normal i386
-s364850671.341023
-e364850671.727105
+s364921241.207130
+e364921241.227421
 r1
 xLd
 x/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise
 xnormal
 xi386
-lSLF07#2@99"Link /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise364850671#364850671#0(0"0(0#0#0"8600765312#935"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -F/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -filelist /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise0#
+lSLF07#2@99"Link /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise364921241#364921241#0(0"0(0#0#0"8610565312#935"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv MACOSX_DEPLOYMENT_TARGET 10.6    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -arch i386 -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -L/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -F/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator -filelist /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Objects-normal/i386/Exercise.LinkFileList -mmacosx-version-min=10.6 -Xlinker -objc_abi_version -Xlinker 2 -framework Foundation -framework UIKit -framework CoreGraphics -o /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise0#
 
 CLd /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app/Exercise normal i386
 s364758812.399618
@@ -650,12 +918,12 @@ xcom.apple.compilers.gcc.4_2
 lSLF07#2@30"Precompile Exercise_Prefix.pch364261179#364261180#0(0"0(0#0#56"/Users/Ryan/Documents/Xcode/Exercise/Exercise_Prefix.pch8612030592#1805"    cd /Users/Ryan/Documents/Xcode/Exercise    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch i386 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -fasm-blocks -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.3.sdk -fexceptions -fvisibility=hidden -mmacosx-version-min=10.6 -gdwarf-2 -fobjc-abi-version=2 -fobjc-legacy-dispatch -D__IPHONE_OS_VERSION_MIN_REQUIRED=40300 -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-generated-files.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-own-target-headers.hmap -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-all-target-headers.hmap -iquote /Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/Exercise-project-headers.hmap -F/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator -I/Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/include -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources/i386 -I/Users/Ryan/Documents/Xcode/Exercise/build/Exercise.build/Debug-iphonesimulator/Exercise.build/DerivedSources -c /Users/Ryan/Documents/Xcode/Exercise/Exercise_Prefix.pch -o /var/folders/dK/dKLCPvP7HLWaQ6SqtiZ49E+++TM/-Caches-/com.apple.Xcode.502/SharedPrecompiledHeaders/Exercise_Prefix-cyuxbcntkhlwbbfxcswjhfdqzwko/Exercise_Prefix.pch.gch0#
 
 CTouch /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app
-s364850671.861150
-e364850671.894000
+s364921241.248034
+e364921241.249901
 r1
 xTouch
 x/Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app
-lSLF07#2@91"Touch /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app364850671#364850671#0(0"0(0#0#0"8613100160#291"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app0#
+lSLF07#2@91"Touch /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app364921241#364921241#0(0"0(0#0#0"8610664704#291"    cd /Users/Ryan/Desktop/duca2012_group5/Exercise    setenv PATH "/Developer/Platforms/iPhoneSimulator.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/Ryan/Desktop/duca2012_group5/Exercise/build/Debug-iphonesimulator/Exercise.app0#
 
 CTouch /Users/Ryan/Documents/Xcode/Exercise/build/Debug-iphonesimulator/Exercise.app
 s364758813.161947
