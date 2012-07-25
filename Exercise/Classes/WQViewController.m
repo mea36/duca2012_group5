@@ -1,23 +1,19 @@
 //
-//  ViewController.m
+//  WQViewController.m
 //  Exercise
 //
-//  Created by Bennett Furman on 7/22/12.
+//  Created by Bennett Furman on 7/24/12.
 //  Copyright (c) 2012 Drexel University. All rights reserved.
 //
 
-#import "ViewController.h"
-#import "ExerciseAppDelegate.h"
-#import "RootViewController.h"
-#import "Exercise.h"
 #import "WQViewController.h"
 
-@interface ViewController ()
+@interface WQViewController ()
 
 @end
 
-@implementation ViewController
-@synthesize menuitems;
+@implementation WQViewController
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
@@ -30,24 +26,19 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    self.navigationItem.title = @"Workout Queue";
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;//Edit to be somewhere 
+    /*
+    UIBarButtonItem * btn = [[UIBarButtonItem alloc] initWithTitle:@"Add" style:(UIBarButtonItemStyleBordered) target:self action:@selector(addTodo:)];
+    self.navigationItem.rightBarButtonItem = btn;
+    */
 
-    self.menuitems = [NSArray arrayWithObjects:@"Exercises", @"Workout Queue", nil];
-    
-    //Set the title
-    self.title = @"Workout Central";
-}
-    //dealloc method declared in RootViewController.m
-    - (void)dealloc { 
-        
-        [menuitems release];
-        [super dealloc];
-    }
-    
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+}
 
 - (void)viewDidUnload
 {
@@ -66,28 +57,21 @@
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     // Return the number of sections.
-    return 1;
+    return 0;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     // Return the number of rows in the section.
-    return [menuitems count];
+    return 0;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
     static NSString *CellIdentifier = @"Cell";
-    
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithFrame:CGRectZero reuseIdentifier:CellIdentifier] autorelease];
-    }
-	
-    cell.text = [self.menuitems objectAtIndex:indexPath.row];
-	
-	// Configure the cell.
+    
+    // Configure the cell...
     
     return cell;
 }
@@ -135,22 +119,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    NSString* nextPage = [self.menuitems objectAtIndex:indexPath.row];
     // Navigation logic may go here. Create and push another view controller.
-    UITableViewController *nextView;
-    if ([nextPage isEqualToString:@"Exercises"]) {
-        nextView = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
-        // ...
-        // Pass the selected object to the new view controller.
-        
-    }
-    if ([nextPage isEqualToString:@"Workout Queue"]) {
-        nextView = [[WQViewController alloc] initWithNibName:@"WQViewController" bundle:nil];
-        // ...
-        // Pass the selected object to the new view controller.
-    }
-    [self.navigationController pushViewController:nextView animated:YES];
-    [nextView release];
+    /*
+     <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
+     // ...
+     // Pass the selected object to the new view controller.
+     [self.navigationController pushViewController:detailViewController animated:YES];
+     [detailViewController release];
+     */
 }
 
 @end

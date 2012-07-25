@@ -14,11 +14,13 @@
     IBOutlet UINavigationController *navigationController;
 	
 	NSMutableArray *exercise;
+    NSMutableArray *todos;
 }
 
 @property (nonatomic, retain) UIWindow *window;
 @property (nonatomic, retain) UINavigationController *navigationController;
 @property (nonatomic, retain) NSMutableArray *exercises;
+@property (nonatomic, retain) NSMutableArray *todos;
 
 @end
 

@@ -15,11 +15,14 @@
 		28AD73600D9D9599002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD735F0D9D9599002E5188 /* MainWindow.xib */; };
 		28C286E10D94DF7D0034E888 /* RootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28C286E00D94DF7D0034E888 /* RootViewController.m */; };
 		28F335F11007B36200424DE2 /* RootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28F335F01007B36200424DE2 /* RootViewController.xib */; };
-<<<<<<< HEAD
-=======
 		6F3F89E915BDEAA8003EEED1 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3F89E715BDEAA8003EEED1 /* ViewController.m */; };
 		6F3F89EA15BDEAA8003EEED1 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F3F89E815BDEAA8003EEED1 /* ViewController.xib */; };
->>>>>>> 8f2745cd96079740e3dd1f5325e73d944092c9f5
+		6F3F89F615BF1899003EEED1 /* TodoCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3F89F515BF1899003EEED1 /* TodoCell.m */; };
+		6F3F89F915BF1E22003EEED1 /* Todo.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3F89F815BF1E22003EEED1 /* Todo.m */; };
+		6F3F89FD15BF247A003EEED1 /* WQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3F89FB15BF2479003EEED1 /* WQViewController.m */; };
+		6F3F89FE15BF247A003EEED1 /* WQViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F3F89FC15BF2479003EEED1 /* WQViewController.xib */; };
+		6F3F8A0615BF2624003EEED1 /* TodoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6F3F8A0415BF2623003EEED1 /* TodoViewController.m */; };
+		6F3F8A0715BF2624003EEED1 /* TodoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6F3F8A0515BF2624003EEED1 /* TodoViewController.xib */; };
 		946F6D0A15B62EA000BAAC83 /* Exercise.m in Sources */ = {isa = PBXBuildFile; fileRef = 946F6D0915B62EA000BAAC83 /* Exercise.m */; };
 		94D00C7615B7454600084BA7 /* ExerciseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94D00C7515B7454600084BA7 /* ExerciseViewController.xib */; };
 		94D00C7E15B7459400084BA7 /* ExerciseViewControllerX.m in Sources */ = {isa = PBXBuildFile; fileRef = 94D00C7C15B7459400084BA7 /* ExerciseViewControllerX.m */; };
@@ -42,14 +45,19 @@
 		6F3F89E615BDEAA8003EEED1 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		6F3F89E715BDEAA8003EEED1 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6F3F89E815BDEAA8003EEED1 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ViewController.xib; path = Classes/ViewController.xib; sourceTree = "<group>"; };
+		6F3F89F415BF1899003EEED1 /* TodoCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoCell.h; sourceTree = "<group>"; };
+		6F3F89F515BF1899003EEED1 /* TodoCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoCell.m; sourceTree = "<group>"; };
+		6F3F89F715BF1E22003EEED1 /* Todo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Todo.h; sourceTree = "<group>"; };
+		6F3F89F815BF1E22003EEED1 /* Todo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Todo.m; sourceTree = "<group>"; };
+		6F3F89FA15BF2479003EEED1 /* WQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WQViewController.h; sourceTree = "<group>"; };
+		6F3F89FB15BF2479003EEED1 /* WQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WQViewController.m; sourceTree = "<group>"; };
+		6F3F89FC15BF2479003EEED1 /* WQViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WQViewController.xib; sourceTree = "<group>"; };
+		6F3F8A0315BF2623003EEED1 /* TodoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TodoViewController.h; sourceTree = "<group>"; };
+		6F3F8A0415BF2623003EEED1 /* TodoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TodoViewController.m; sourceTree = "<group>"; };
+		6F3F8A0515BF2624003EEED1 /* TodoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TodoViewController.xib; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Exercise-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Exercise-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
-<<<<<<< HEAD
-		946F6D0815B62EA000BAAC83 /* Exercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Exercise.h; sourceTree = "<group>"; };
-		946F6D0915B62EA000BAAC83 /* Exercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Exercise.m; sourceTree = "<group>"; };
-=======
 		946F6D0815B62EA000BAAC83 /* Exercise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Exercise.h; path = ../Exercise.h; sourceTree = "<group>"; };
 		946F6D0915B62EA000BAAC83 /* Exercise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Exercise.m; path = ../Exercise.m; sourceTree = "<group>"; };
->>>>>>> 8f2745cd96079740e3dd1f5325e73d944092c9f5
 		94D00C7515B7454600084BA7 /* ExerciseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExerciseViewController.xib; sourceTree = "<group>"; };
 		94D00C7B15B7459400084BA7 /* ExerciseViewControllerX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ExerciseViewControllerX.h; path = ../ExerciseViewControllerX.h; sourceTree = "<group>"; };
 		94D00C7C15B7459400084BA7 /* ExerciseViewControllerX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ExerciseViewControllerX.m; path = ../ExerciseViewControllerX.m; sourceTree = "<group>"; };
@@ -76,6 +84,16 @@
 				6F3F89E615BDEAA8003EEED1 /* ViewController.h */,
 				6F3F89E715BDEAA8003EEED1 /* ViewController.m */,
 				28C286DF0D94DF7D0034E888 /* RootViewController.h */,
+				6F3F89FA15BF2479003EEED1 /* WQViewController.h */,
+				6F3F89FB15BF2479003EEED1 /* WQViewController.m */,
+				6F3F8A0315BF2623003EEED1 /* TodoViewController.h */,
+				6F3F8A0415BF2623003EEED1 /* TodoViewController.m */,
+				6F3F8A0515BF2624003EEED1 /* TodoViewController.xib */,
+				6F3F89FC15BF2479003EEED1 /* WQViewController.xib */,
+				6F3F89F415BF1899003EEED1 /* TodoCell.h */,
+				6F3F89F715BF1E22003EEED1 /* Todo.h */,
+				6F3F89F815BF1E22003EEED1 /* Todo.m */,
+				6F3F89F515BF1899003EEED1 /* TodoCell.m */,
 				28C286E00D94DF7D0034E888 /* RootViewController.m */,
 				1D3623240D0F684500981E51 /* ExerciseAppDelegate.h */,
 				1D3623250D0F684500981E51 /* ExerciseAppDelegate.m */,
@@ -193,10 +211,9 @@
 				28F335F11007B36200424DE2 /* RootViewController.xib in Resources */,
 				94D00C7615B7454600084BA7 /* ExerciseViewController.xib in Resources */,
 				94D00C7F15B7459400084BA7 /* ExerciseViewControllerX.xib in Resources */,
-<<<<<<< HEAD
-=======
 				6F3F89EA15BDEAA8003EEED1 /* ViewController.xib in Resources */,
->>>>>>> 8f2745cd96079740e3dd1f5325e73d944092c9f5
+				6F3F89FE15BF247A003EEED1 /* WQViewController.xib in Resources */,
+				6F3F8A0715BF2624003EEED1 /* TodoViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +230,10 @@
 				946F6D0A15B62EA000BAAC83 /* Exercise.m in Sources */,
 				94D00C7E15B7459400084BA7 /* ExerciseViewControllerX.m in Sources */,
 				6F3F89E915BDEAA8003EEED1 /* ViewController.m in Sources */,
+				6F3F89F615BF1899003EEED1 /* TodoCell.m in Sources */,
+				6F3F89F915BF1E22003EEED1 /* Todo.m in Sources */,
+				6F3F89FD15BF247A003EEED1 /* WQViewController.m in Sources */,
+				6F3F8A0615BF2624003EEED1 /* TodoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

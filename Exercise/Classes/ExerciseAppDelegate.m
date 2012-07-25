@@ -16,6 +16,28 @@
 @synthesize window;
 @synthesize navigationController;
 @synthesize exercises;
+@synthesize todos;
+
+/*- (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
+    if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
+        UIView *myContentView = self.contentView;
+        
+        self.todoMeasurement = [self newLabelWithPrimaryColor:[UIColor blackColor]
+                                              selectedColor:[UIColor whiteColor] fontSize:14.0 bold:YES];
+        self.todoMeasurement.textAllignment = UITextAlignmentLeft;
+        [myContentView addSubview:self.todoTextLabel];
+        [self.todoMeasurement release];
+        
+        self.todoData = [self newLabelWithPrimaryColor:[UIColor blackColor]
+                                              selectedColor:[UIColor whiteColor] fontSize:10.0 bold:YES];
+        self.todoData.textAllignment = UITextAlignmentRight;
+        [myContentView addSubview:self.todoData];
+        [self.todoData release];
+        
+//        [myContentView bringSubviewToFront:self.todoPriorityImageView]
+    }
+    return self
+}*/
 
 
 #pragma mark -
