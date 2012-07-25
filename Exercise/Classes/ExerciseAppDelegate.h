@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ViewController.h"
+#import "TodoViewController.h"
 
 @interface ExerciseAppDelegate : NSObject <UIApplicationDelegate> {
     
@@ -17,6 +18,7 @@
 	NSMutableArray *exercise;
     NSMutableArray *todos;
     //NSString *database;
+    NSString *exerciseName;
 }
 
 //-(Todo *)addTodo;
@@ -26,6 +28,7 @@
 @property (nonatomic, retain) NSMutableArray *exercises;
 @property (nonatomic, retain) NSMutableArray *todos;
 @property (nonatomic, retain) NSString *database;
+@property (nonatomic, retain) NSString *exerciseName;
 
 -(void)removeTodo:(Todo *)todo;
 -(Todo *)addTodo;

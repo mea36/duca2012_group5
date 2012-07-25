@@ -9,7 +9,7 @@
 #import "Todo.h"
 
 @implementation Todo
-@synthesize primaryKey,text,priority,status;
+@synthesize primaryKey,text,status;//priority,
 
 - (void)updateStatus:(NSInteger)newStatus {
 	self.status = newStatus;
@@ -17,9 +17,9 @@
 	
 }
 
-- (void)updatePriority:(NSInteger)newPriority {
+/*- (void)updatePriority:(NSInteger)newPriority {
 	self.priority = newPriority;
 	dirty = YES;
-}
+}*/
 
 @end

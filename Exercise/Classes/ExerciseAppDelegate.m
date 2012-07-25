@@ -11,6 +11,7 @@
 #import "Exercise.h"
 #import "ViewController.h"
 #import "Todo.h"
+#import "TodoViewController.h"
 
 @interface ExerciseAppDelegate (Private)
 @end
@@ -32,7 +33,6 @@
 
 /*- (void)applicationDidFinishLaunching:(UIApplication *)application {
 	
-	[self initializeDatabase];
 	
 	// Configure and show the window
 	[window addSubview:[navigationController view]];
@@ -45,16 +45,6 @@
     NSMutableArray *todoArray = [[NSMutableArray alloc] init];
     self.todos = todoArray;
     [todoArray release];
-    
-    int i = 0;
-    for (i = 0; i < 3; i++) {
-        Todo *td = [[Todo alloc] init ];
-        td.text = [NSString stringWithFormat:@"I am task # %d", i];
-        td.priority = 1;
-        td.status = 0;
-        [todos addObject:td];
-        [td release];
-    }
 }
 
 -(void)removeTodo:(Todo *)todo {
@@ -67,13 +57,18 @@
 }
 
 -(Todo *) addTodo {
-   
     Todo *td = [[Todo alloc] init ];
     //    td.text = [NSString stringWithFormat:@"Go %d", 1];
-    td.text = @"Exercise";
-    td.priority = 1;
+    td.text = @"";
+    //td.priority = 1;
     td.status = 0;
-    [todos addObject:td];
+    
+    if (self.todos == nil) {
+        NSLog(@"i'm nil");
+    }
+    [self.todos addObject:td];
+    
+    NSLog(@"%@", self.todos);
     return td;
     //[td release];
     //NSString *g = [NSString @"I am task # %d"];
@@ -103,6 +98,8 @@
 */
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {
+    [self initializeDatabase];
+
 
 	
 	Exercise *abs	=[[Exercise alloc] initWithName:@"Abs:Bent-Knee Hip Raise" description:@"Step.1: Lay flat on the ground with your arms at your sides and your palms flat on the ground.\nStep.2: Now bend your knees at about a 75 degree angle and lift your feet off the floor by around 2 inches.\nStep.3: Using your lower abs bring your knees in towards you while you maintain the 7 degree angle you have your legs in./nReps: Do 3 sets of 10 you can add on more Reps or weight to increase difficulty."];

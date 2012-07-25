@@ -14,7 +14,7 @@
 
 @implementation TodoCell
 
-@synthesize todoMeasurement,todoData,todoTextLabel,todoPriorityLabel,todoPriorityImageView;
+@synthesize todoMeasurement,todoData,todoTextLabel;//todoPriorityLabel,todoPriorityImageView;
 
 - (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
 	if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
@@ -30,7 +30,7 @@
 		[myContentView addSubview:self.todoTextLabel];
 		[self.todoTextLabel release];
         
-        self.todoPriorityLabel = [self newLabelWithPrimaryColor:[UIColor blackColor] 
+        /*self.todoPriorityLabel = [self newLabelWithPrimaryColor:[UIColor blackColor] 
 												  selectedColor:[UIColor whiteColor] fontSize:10.0 bold:YES];
 		self.todoPriorityLabel.textAlignment = UITextAlignmentRight;
 		[myContentView addSubview:self.todoPriorityLabel];
@@ -39,7 +39,7 @@
         // Position the todoPriorityImageView above all of the other views so
         // it's not obscured. It's a transparent image, so any views
         // that overlap it will still be visible.
-        [myContentView bringSubviewToFront:self.todoPriorityImageView];
+        [myContentView bringSubviewToFront:self.todoPriorityImageView];*/
     }
     return self;
 }
@@ -64,8 +64,8 @@
     todo = newTodo;
     
     self.todoTextLabel.text = newTodo.text;
-    self.todoPriorityImageView.image = [self imageForPriority:newTodo.priority];
-    
+    //self.todoPriorityImageView.image = [self imageForPriority:newTodo.priority];
+/*    
 	switch(newTodo.priority) {
 		case 2:
 			self.todoPriorityLabel.text = @"Medium";
@@ -76,7 +76,7 @@
 		default:
 			self.todoPriorityLabel.text = @"High";
 			break;
-	}
+	}*/
 	
     [self setNeedsDisplay];
 }
@@ -103,8 +103,8 @@
 		frame = CGRectMake(boundsX +RIGHT_COLUMN_OFFSET  , UPPER_ROW_TOP, RIGHT_COLUMN_WIDTH, 13);
 		frame.origin.y = 15;
 		self.todoTextLabel.frame = frame;
-        
-        // Place the priority image.
+
+     /*   // Place the priority image.
         UIImageView *imageView = self.todoPriorityImageView;
         frame = [imageView frame];
 		frame.origin.x = boundsX + LEFT_COLUMN_OFFSET;
@@ -118,6 +118,7 @@
         frame = CGRectMake(priorityX, UPPER_ROW_TOP, prioritySize.width, prioritySize.height);
 		frame.origin.y = 15;
         self.todoPriorityLabel.frame = frame;
+     */
     }
 }
 
@@ -136,9 +137,9 @@
 	self.todoTextLabel.highlighted = selected;
 	self.todoTextLabel.opaque = !selected;
 	
-	self.todoPriorityLabel.backgroundColor = backgroundColor;
+/*	self.todoPriorityLabel.backgroundColor = backgroundColor;
 	self.todoPriorityLabel.highlighted = selected;
-	self.todoPriorityLabel.opaque = !selected;
+	self.todoPriorityLabel.opaque = !selected; */
 }
 
 - (UILabel *)newLabelWithPrimaryColor:(UIColor *)primaryColor 

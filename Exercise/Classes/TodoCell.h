@@ -15,13 +15,13 @@
     UILabel *todoData;
     Todo        *todo;
     UILabel     *todoTextLabel;
-    UILabel     *todoPriorityLabel;
-    UIImageView *todoPriorityImageView;
+   // UILabel     *todoPriorityLabel;
+   // UIImageView *todoPriorityImageView;
 }
 
 @property (nonatomic, retain) UILabel     *todoTextLabel;
-@property (nonatomic, retain) UILabel     *todoPriorityLabel;
-@property (nonatomic, retain) UIImageView *todoPriorityImageView;
+//@property (nonatomic, retain) UILabel     *todoPriorityLabel;
+//@property (nonatomic, retain) UIImageView *todoPriorityImageView;
 @property (nonatomic, retain) UILabel *todoMeasurement;
 @property (nonatomic, retain) UILabel *todoData;
 

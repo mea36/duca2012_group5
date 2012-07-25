@@ -46,7 +46,10 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
-
+- (void)viewWillAppear:(BOOL)animated {
+	[self.tableView reloadData];
+	[super viewWillAppear:animated];
+}
 - (void)addTodo:(id)sender {
     ExerciseAppDelegate *appDelegate = (ExerciseAppDelegate *)[[UIApplication sharedApplication] delegate];
     
@@ -56,7 +59,7 @@
         self.todoView = viewController;
         [viewController release];
     }
-    
+    NSLog(@"adding todod");
     Todo *todo = [appDelegate addTodo];
     [self.navigationController pushViewController:self.todoView animated:YES];
     self.todoView.todo = todo;
@@ -103,12 +106,26 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *MyIdentifier = @"MyIdentifier";
+	
+	TodoCell *cell = (TodoCell *)[tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+	if (cell == nil) {
+		cell = [[[TodoCell alloc] initWithFrame:CGRectZero reuseIdentifier:MyIdentifier] autorelease];
+	}
+	
+	ExerciseAppDelegate *appDelegate = (ExerciseAppDelegate *)[[UIApplication sharedApplication] delegate];
+	Todo *td = [appDelegate.todos objectAtIndex:indexPath.row];
+	
+	[cell setTodo:td];
+	
+	// Set up the cell
+	return cell;
+/*static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
     // Configure the cell...
     
-    return cell;
+    return cell;*/
 }
 
 /*
@@ -154,6 +171,38 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    ExerciseAppDelegate *appDelegate = (ExerciseAppDelegate *)[[UIApplication sharedApplication] delegate];
+    Todo *todo = (Todo *)[appDelegate.todos objectAtIndex:indexPath.row];
+    
+    if(self.todoView == nil) {
+        TodoViewController *viewController = [[TodoViewController alloc] 
+                                              initWithNibName:@"TodoViewController" bundle:[NSBundle mainBundle]];
+        self.todoView = viewController;
+        [viewController release];
+    }
+    
+    [self.navigationController pushViewController:self.todoView animated:YES];
+    self.todoView.todo = todo;
+    self.todoView.title = todo.text;
+    [self.todoView.todoText setText:todo.text];
+   /* 
+    NSInteger priority = todo.priority - 1;
+    if(priority > 2 || priority < 0) {
+        priority = 1;
+    }
+    priority = 2 - priority;
+    
+    [self.todoView.todoPriority setSelectedSegmentIndex:priority];
+    */
+    if(todo.status == 1) {
+        [self.todoView.todoButton setTitle:@"Mark As In Progress" forState:UIControlStateNormal];
+        [self.todoView.todoButton setTitle:@"Mark As In Progress" forState:UIControlStateHighlighted];
+        [self.todoView.todoStatus setText:@"Complete"];
+    } else {
+        [self.todoView.todoButton setTitle:@"Mark As Complete" forState:UIControlStateNormal];
+        [self.todoView.todoButton setTitle:@"Mark As Complete" forState:UIControlStateHighlighted];
+        [self.todoView.todoStatus setText:@"In Progress"];
+    }
     // Navigation logic may go here. Create and push another view controller.
     /*
      <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];

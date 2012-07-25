@@ -11,17 +11,17 @@
 @interface Todo : NSObject {
 	NSString  *text;
 	NSInteger primaryKey;
-	NSInteger priority;
+	//NSInteger priority;
 	NSInteger status;
 	BOOL dirty;
 }
 
 - (void)updateStatus:(NSInteger) newStatus;
-- (void)updatePriority:(NSInteger) newPriority;
+//- (void)updatePriority:(NSInteger) newPriority;
 
 @property (assign, nonatomic, readonly) NSInteger primaryKey;
 @property (nonatomic, retain) NSString *text;
-@property (nonatomic) NSInteger priority;
+//@property (nonatomic) NSInteger priority;
 @property (nonatomic) NSInteger status;
 
 @end

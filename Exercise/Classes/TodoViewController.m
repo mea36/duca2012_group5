@@ -14,7 +14,7 @@
 
 @implementation TodoViewController
 
-@synthesize todoText,todoValue,todoSetAmount,todoUnit,todoButton,todoStatus,todo;
+@synthesize todoText,exerciseName,todoValue,todoSetAmount,todoUnit,todoButton,todoStatus,todo;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
