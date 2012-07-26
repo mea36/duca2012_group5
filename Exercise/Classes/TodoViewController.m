@@ -60,7 +60,20 @@
     NSLog(@"setting measurment = %@", self.todo.measurement);
 }
 - (IBAction) updateUnit:(id)sender {
-   // self.todo.units = self.todoUnit.title;
+   
+    switch (self.todoUnit.selectedSegmentIndex) {
+        case 0:
+            self.todo.units = @"Reps";
+            break;
+        case 1:
+             self.todo.units = @"Time";
+            break;
+        case 2:
+            self.todo.units = @"Distance";
+        default:
+            break;
+    }
+
 }
 - (IBAction) updateSet:(id)sender {
     self.todo.setval = self.todoSetAmount.text;

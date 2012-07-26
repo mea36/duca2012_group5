@@ -121,7 +121,7 @@
 	Todo *td = [appDelegate.todos objectAtIndex:indexPath.row];
 	
     [[cell textLabel] setText:td.text];
-    [[cell detailTextLabel] setText:[NSString stringWithFormat:@"%@: %@ amount: %@", @"Reps", td.measurement, td.setval]];
+    [[cell detailTextLabel] setText:[NSString stringWithFormat:@"%@: %@ amount: %@", td.units, td.measurement, td.setval]];
 	//[cell setTodo:td];
 	
 	// Set up the cell
@@ -161,9 +161,6 @@
         [self.tableView endUpdates];
         [self.tableView reloadData];
     }  
-    else {
-        NSLog(@"here i am");
-    }
    // else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
   //  }   
