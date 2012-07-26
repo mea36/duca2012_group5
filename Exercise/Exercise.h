@@ -11,10 +11,12 @@
 @interface Exercise : NSObject {
 	NSString *name;
 	NSString *description;
+	NSString *image;
 }
 
 @property(nonatomic,copy) NSString *name;
 @property(nonatomic,copy) NSString *description;
+@property(nonatomic,copy) NSString *image;
 
 - (id)initWithName:(NSString*)n description:(NSString *)desc;
 
