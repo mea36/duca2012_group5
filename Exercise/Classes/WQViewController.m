@@ -18,7 +18,7 @@
 @end
 
 @implementation WQViewController
-@synthesize todoView;
+@synthesize todoView;//, tableView;
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
@@ -101,22 +101,28 @@
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 	ExerciseAppDelegate *appDelegate = (ExerciseAppDelegate *)[[UIApplication sharedApplication] delegate];
+        NSLog(@"num rows = %d", appDelegate.todos.count);
     return appDelegate.todos.count;
+
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    
     static NSString *MyIdentifier = @"MyIdentifier";
 	
-	TodoCell *cell = (TodoCell *)[tableView dequeueReusableCellWithIdentifier:MyIdentifier];
+	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:MyIdentifier];
 	if (cell == nil) {
-		cell = [[[TodoCell alloc] initWithFrame:CGRectZero reuseIdentifier:MyIdentifier] autorelease];
-	}
-	
+        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:MyIdentifier] autorelease];
+    }
+    
 	ExerciseAppDelegate *appDelegate = (ExerciseAppDelegate *)[[UIApplication sharedApplication] delegate];
 	Todo *td = [appDelegate.todos objectAtIndex:indexPath.row];
 	
-	[cell setTodo:td];
+    [[cell textLabel] setText:td.text];
+    [[cell detailTextLabel] setText:[NSString stringWithFormat:@"%@: %@ amount: %@", @"Reps", td.measurement, td.setval]];
+	//[cell setTodo:td];
 	
 	// Set up the cell
 	return cell;
@@ -128,28 +134,41 @@
     return cell;*/
 }
 
-/*
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
 
-/*
+
+
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
     if (editingStyle == UITableViewCellEditingStyleDelete) {
         // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    }   
-    else if (editingStyle == UITableViewCellEditingStyleInsert) {
+        ExerciseAppDelegate *appDelegate = (ExerciseAppDelegate *)[[UIApplication sharedApplication] delegate];
+        NSLog(@"deleting object at index %d", indexPath.row);
+        [[appDelegate todos] removeObjectAtIndex:indexPath.row];
+
+        [[self tableView] deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];//HELP
+
+   
+        //Todo *todo = (Todo *)[appDelegate.todos objectAtIndex:indexPath.row];
+        
+        [self.tableView endUpdates];
+        [self.tableView reloadData];
+    }  
+    else {
+        NSLog(@"here i am");
+    }
+   // else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+  //  }   
 }
-*/
+
 
 /*
 // Override to support rearranging the table view.
@@ -211,6 +230,12 @@
      [self.navigationController pushViewController:detailViewController animated:YES];
      [detailViewController release];
      */
+}
+-(void) dealloc
+{
+    [todoView release];
+//    [tableView release];
+    [super dealloc];
 }
 
 @end

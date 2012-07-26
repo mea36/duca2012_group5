@@ -23,7 +23,7 @@
 @property(nonatomic,retain) IBOutlet UITextField        *todoText;
 @property(nonatomic,retain) IBOutlet UITextField        *exerciseName;
 @property(nonatomic,retain) IBOutlet UITextField        *todoValue;
-@property(nonatomic,retain) IBOutlet UITextField        *todoSetAmount;;
+@property(nonatomic,retain) IBOutlet UITextField        *todoSetAmount;
 @property(nonatomic,retain) IBOutlet UISegmentedControl *todoUnit;
 @property(nonatomic,retain) IBOutlet UIButton           *todoButton;
 @property(nonatomic,retain) IBOutlet UILabel            *todoStatus;
@@ -32,6 +32,9 @@
 - (IBAction) updateStatus:(id) sender;
 //- (IBAction) updatePriority:(id) sender;
 - (IBAction) updateText:(id) sender;
+- (IBAction) updateValue:(id)sender;
+- (IBAction) updateUnit:(id)sender;
+- (IBAction) updateSet:(id)sender;
 
 /*
 @property(nonatomic,retain) IBOutlet

@@ -10,6 +10,11 @@
 
 @interface Todo : NSObject {
 	NSString  *text;
+    NSString *units;
+    NSString *measurement;
+    NSString *setval;
+    //create a function to display selection.
+    
 	NSInteger primaryKey;
 	//NSInteger priority;
 	NSInteger status;
@@ -21,6 +26,9 @@
 
 @property (assign, nonatomic, readonly) NSInteger primaryKey;
 @property (nonatomic, retain) NSString *text;
+@property (nonatomic, retain) NSString *units;
+@property (nonatomic, retain) NSString *measurement;
+@property (nonatomic, retain) NSString *setval;
 //@property (nonatomic) NSInteger priority;
 @property (nonatomic) NSInteger status;
 

@@ -52,6 +52,19 @@
 
 - (IBAction) updateText:(id) sender {
 	self.todo.text = self.todoText.text;
+    NSLog(@"setting text = %@", self.todo.text);
+}
+
+- (IBAction) updateValue:(id)sender {
+    self.todo.measurement = self.todoValue.text;
+    NSLog(@"setting measurment = %@", self.todo.measurement);
+}
+- (IBAction) updateUnit:(id)sender {
+   // self.todo.units = self.todoUnit.title;
+}
+- (IBAction) updateSet:(id)sender {
+    self.todo.setval = self.todoSetAmount.text;
+    NSLog(@"setting setval = %@", self.todo.setval);
 }
 
 - (void)viewDidUnload

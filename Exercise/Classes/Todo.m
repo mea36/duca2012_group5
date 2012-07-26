@@ -9,8 +9,18 @@
 #import "Todo.h"
 
 @implementation Todo
-@synthesize primaryKey,text,status;//priority,
+@synthesize primaryKey,text,status,units,measurement,setval;//priority,
 
+-(id) init
+{
+    self = [super init];
+    if (self) {
+        self.text = @"exercise";
+        self.measurement = @"0";
+        self.setval = @"0";
+    }
+    return self;
+}
 - (void)updateStatus:(NSInteger)newStatus {
 	self.status = newStatus;
 	dirty = YES;

@@ -7,6 +7,7 @@
 //
 
 #import "TodoCell.h"
+#import "TodoViewController.h"
 
 @interface TodoCell()
 - (UILabel *)newLabelWithPrimaryColor:(UIColor *) selectedColor:(UIColor *)selectedColor fontsize:(CGFloat)fontSize bold:(BOOL)bold;
@@ -14,7 +15,7 @@
 
 @implementation TodoCell
 
-@synthesize todoMeasurement,todoData,todoTextLabel;//todoPriorityLabel,todoPriorityImageView;
+@synthesize todoMeasurement,todoData,todoUnits,todoTextLabel;//todoPriorityLabel,todoPriorityImageView;
 
 - (id)initWithFrame:(CGRect)frame reuseIdentifier:(NSString *)reuseIdentifier {
 	if (self = [super initWithFrame:frame reuseIdentifier:reuseIdentifier]) {
@@ -63,7 +64,7 @@
     
     todo = newTodo;
     
-    self.todoTextLabel.text = newTodo.text;
+    self.todoTextLabel.text = [NSString stringWithFormat:@"%@: %@", newTodo.text, newTodo.measurement];//, todoUnit, todoValue];
     //self.todoPriorityImageView.image = [self imageForPriority:newTodo.priority];
 /*    
 	switch(newTodo.priority) {

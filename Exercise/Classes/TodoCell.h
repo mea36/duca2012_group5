@@ -13,6 +13,7 @@
     //Todo *todo;//Should this be the "Workout" object?
     UILabel *todoMeasurement;
     UILabel *todoData;
+    UILabel *todoUnits;
     Todo        *todo;
     UILabel     *todoTextLabel;
    // UILabel     *todoPriorityLabel;
@@ -24,6 +25,7 @@
 //@property (nonatomic, retain) UIImageView *todoPriorityImageView;
 @property (nonatomic, retain) UILabel *todoMeasurement;
 @property (nonatomic, retain) UILabel *todoData;
+@property (nonatomic, retain) UILabel *todoUnits;
 
 - (Todo *)todo;
 - (void)setTodo:(Todo *)newTodo; //Is this SQL stuff?
